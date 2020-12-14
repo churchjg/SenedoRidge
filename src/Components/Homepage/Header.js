@@ -10,7 +10,7 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
+    borderBottom: `2px solid ${theme.palette.divider}`,
   },
   toolbarTitle: {
     flex: 1,
@@ -32,7 +32,7 @@ export default function Header(props) {
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
-        <Button size="small">Join Our Wine Club</Button>
+        <Button variant="outlined" size="small">Join Our Wine Club</Button>
         <Typography
           component="h2"
           variant="h4"

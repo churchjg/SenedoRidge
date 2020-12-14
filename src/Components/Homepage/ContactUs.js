@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
   cardMedia: {
     width: 700,
-    height: 600
+    height: 700
   },
 });
 

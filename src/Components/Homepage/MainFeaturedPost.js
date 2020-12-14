@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   mainFeaturedPostContent: {
     position: 'relative',
     padding: theme.spacing(3),
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('lg')]: {
       padding: theme.spacing(12),
       paddingRight: 0,
     },
@@ -45,7 +45,7 @@ export default function MainFeaturedPost(props) {
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <div className={classes.overlay} />
       <Grid container>
-        <Grid item md={6}>
+        <Grid item md={2}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}

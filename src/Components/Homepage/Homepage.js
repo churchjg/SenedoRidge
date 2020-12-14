@@ -12,7 +12,7 @@ import Gallery from "../Gallery/Gallery";
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(2),
   },
 }));
 
@@ -29,7 +29,7 @@ const mainFeaturedPost = {
   title: "Senedo Ridge Vineyard",
   description:
     "Senedo Ridge Vineyard was founded in 2016 by Jonathan Church with a simple idea in mind:",
-  description1: "To Leave Something Behind Bigger Than Oneself.",
+  description1: "To Leave Something Behind.",
 
   image: "https://i.imgur.com/hRMV0G1.jpg",
   imgText: "main image description",
@@ -53,7 +53,7 @@ const contactUs = [
     date: "",
     description:
       "If you would like to get in contact, either for feedback or to join our wine club, please fill out the form below. DONT FORGET TO ADD FORM ",
-    image: "https://i.imgur.com/hzxOS7l.png",
+    image: "https://i.imgur.com/LLx3oN5.jpg?4",
     imageText: "Image Text",
   },
 ];
@@ -74,7 +74,7 @@ export default function Homepage() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="100%">
         <Header title="Senedo Ridge Vineyard" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
