@@ -9,6 +9,9 @@ import FeaturedPost from "./FeaturedPost";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Gallery from "../Gallery/Gallery";
+import WineShop from "../Shop/WineShop"
+import WineItem from "../ShopItems/Items"
+import Checkout from "../Checkout/Checkout"
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -17,12 +20,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: "Home", url: "#" },
+  { title: "Home", url: "" },
   { title: "About Us", url: "#" },
   { title: "Contact Us", url: "#" },
-  { title: "Events", url: "#" },
-  { title: "Wine Shop", url: "#" },
-  { title: "Gallery", url: "#" },
+  { title: "Events", url: "/event" },
+  { title: "Wine Shop", url: "/wines" },
+  { title: "Gallery", url: "/gallery" },
 ];
 
 const mainFeaturedPost = {
@@ -58,18 +61,10 @@ const contactUs = [
   },
 ];
 
-//   {
-//     title: "Contact Us",
-//     date: "",
-//     description:
-//       "If you would like to get in contact, either for feedback or to join our wine club, please fill out the form below ",
-//     image: "https://i.imgur.com/Rd7jJDR.jpg",
-//     imageText: "Image Text",
-//   },
-// ];
+
 
 export default function Homepage() {
-  const classes = useStyles();
+  
 
   return (
     <React.Fragment>
@@ -90,6 +85,9 @@ export default function Homepage() {
           </Grid>
         </main>
         <Gallery/>
+        <WineShop/>
+        <WineItem />
+        <Checkout/>
       </Container>
       <Footer
         title="Senedo Ridge Vineyard"

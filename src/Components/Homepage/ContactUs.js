@@ -18,8 +18,8 @@ const useStyles = makeStyles({
     flex: 1,
   },
   cardMedia: {
-    width: 700,
-    height: 700
+    width: 500,
+    height: 500
   },
 });
 
