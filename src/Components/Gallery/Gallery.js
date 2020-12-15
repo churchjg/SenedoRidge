@@ -61,7 +61,9 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
+    
   },
+
   cardContent: {
     flexGrow: 1,
   },
@@ -118,20 +120,17 @@ export default function Gallery() {
         <Container className={classes.cardGrid} maxWidth="100%">
           {/* End hero unit */}
           <Grid container spacing={6}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={3} md={4}>
+            
+              <Grid item  xs={12} sm={3} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
                     image="https://i.imgur.com/6EqeGER.jpg"
                     title="Image title"
-                   
                   />
-                  
-                  
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Misty Western View
                     </Typography>
                     <Typography>
                       This is a media card. You can use this section to describe the content.
@@ -144,7 +143,259 @@ export default function Gallery() {
                   </CardActions>
                 </Card>
               </Grid>
-            ))}
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/clYDfsW.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Buck Mountain Snow Day
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/KttNoOC.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Buck Mountain Smokey
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/pNmdgcJ.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Friend 1 — Black Bear
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/zbx4Eu8.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Friend 2 — Fox
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/02dm8v7.jpg?1"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Friend 3 — Hawk
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/rONa5Hu.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Turkey Season
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/scJC7w3.jpg?1"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Appalacian Mountain Sunset
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/8RXtSh0.jpg?1"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Spring Bloom
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/nV39lSf.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      The Storm
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/yEMLAQA.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Tractor's First Snow Day
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+              <Grid item  xs={12} sm={3} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://i.imgur.com/fTjuTvG.jpg"
+                    title="Image title"
+                   
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      What Started It All
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" >
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
           </Grid>
         </Container>
       </main>
