@@ -14,6 +14,8 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbarTitle: {
     flex: 1,
+    fontStyle: 'italic',
+    fontFamily: 'Belluccia'
   },
   toolbarSecondary: {
     justifyContent: 'space-between',
@@ -34,8 +36,8 @@ export default function Header(props) {
       <Toolbar className={classes.toolbar}>
         <Button variant="outlined" size="small">Join Our Wine Club</Button>
         <Typography
-          component="h2"
-          variant="h4"
+          component="h1"
+          variant="h3"
           color="inherit"
           align="center"
           noWrap

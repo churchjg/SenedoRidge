@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
+    
   },
   overlay: {
     position: 'absolute',
@@ -24,13 +25,19 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
     left: 0,
     backgroundColor: 'rgba(0,0,0,.3)',
+    
   },
   mainFeaturedPostContent: {
+    display: "flex",
+    flexDirection: "column",
     position: 'relative',
-    padding: theme.spacing(3),
+    padding: theme.spacing(6),
+    fontStyle: 'italic',
+    fontFamily: 'Belluccia',
     [theme.breakpoints.up('lg')]: {
       padding: theme.spacing(12),
       paddingRight: 0,
+     
     },
   },
 }));

@@ -16,10 +16,12 @@ const useStyles = makeStyles({
   },
   cardDetails: {
     flex: 1,
+    
   },
   cardMedia: {
     width: 700,
-    height: 500
+    height: 500,
+    
   },
 });
 
@@ -33,16 +35,16 @@ export default function FeaturedPost(props) {
         <Card className={classes.card}>
           <div className={classes.cardDetails}>
             <CardContent>
-              <Typography component="h2" variant="h5">
+              <Typography component="h2" variant="h4">
                 {post.title}
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
                 {post.date}
               </Typography>
-              <Typography variant="subtitle1" paragraph>
+              <Typography variant="h6"  paragraph>
                 {post.description}
               </Typography>
-              <Typography variant="subtitle1" color="primary">
+              <Typography variant="subtitle1"  color="primary">
               </Typography>
             </CardContent>
           </div>
