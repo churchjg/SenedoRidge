@@ -53,7 +53,7 @@ const contactUs = [
     date: "",
     description:
       "If you would like to get in contact, either for feedback or to join our wine club, please fill out the form below. DONT FORGET TO ADD FORM ",
-    image: "https://i.imgur.com/LLx3oN5.jpg?4",
+    image: "https://i.imgur.com/ELifj89.jpg",
     imageText: "Image Text",
   },
 ];
@@ -89,6 +89,7 @@ export default function Homepage() {
             ))}
           </Grid>
         </main>
+        <Gallery/>
       </Container>
       <Footer
         title="Senedo Ridge Vineyard"

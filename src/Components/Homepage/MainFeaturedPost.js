@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    
+     
   },
   overlay: {
     position: 'absolute',
@@ -34,12 +34,15 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6),
     fontStyle: 'italic',
     fontFamily: 'Belluccia',
+    marginBottom: "250px",
     [theme.breakpoints.up('lg')]: {
       padding: theme.spacing(12),
       paddingRight: 0,
+      width: "190%",
      
     },
   },
+  
 }));
 
 export default function MainFeaturedPost(props) {
@@ -52,7 +55,7 @@ export default function MainFeaturedPost(props) {
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <div className={classes.overlay} />
       <Grid container>
-        <Grid item md={2}>
+        <Grid item md={2} >
           <div className={classes.mainFeaturedPostContent}>
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}

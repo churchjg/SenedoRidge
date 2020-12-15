@@ -31,6 +31,17 @@ function Copyright() {
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
+    color: "white"
+  },
+  headbackground: {
+    backgroundColor: "#212529"
+  },
+  header: {
+    color: "white",
+    fontStyle: 'italic',
+    fontFamily: 'Belluccia',
+    fontSize: "25px",
+    
   },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
@@ -60,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 export default function Gallery() {
   const classes = useStyles();
@@ -68,10 +79,10 @@ export default function Gallery() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
+      <AppBar position="relative" color="default">
+        <Toolbar className={classes.headbackground}>
           <CameraIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
+          <Typography className={classes.header} variant="h6" color="default" noWrap>
             Senedo Ridge Vineyard
           </Typography>
         </Toolbar>
@@ -79,9 +90,9 @@ export default function Gallery() {
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
-          <Container maxWidth="sm">
+          <Container maxWidth="md">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Senedo Ridge Gallery
+              Senedo Ridge Vineyard Gallery
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                 Having owned a part-time photography business in the 1990s, Jon still loves to snap pictures around the Vineyard.
@@ -90,12 +101,12 @@ export default function Gallery() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button variant="contained" color="default">
                     Back To Home
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
+                  <Button variant="outlined" color="default">
                     Contact Us
                   </Button>
                 </Grid>
@@ -103,17 +114,21 @@ export default function Gallery() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+
+        <Container className={classes.cardGrid} maxWidth="100%">
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Grid container spacing={6}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={3} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image="https://i.imgur.com/6EqeGER.jpg"
                     title="Image title"
+                   
                   />
+                  
+                  
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       Heading
@@ -123,11 +138,8 @@ export default function Gallery() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" >
                       View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
                     </Button>
                   </CardActions>
                 </Card>

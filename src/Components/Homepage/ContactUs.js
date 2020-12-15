@@ -33,7 +33,7 @@ export default function ContactUs(props) {
         <Card className={classes.card}>
           <div className={classes.cardDetails}>
             <CardContent>
-              <Typography component="h2" variant="h4">
+              <Typography component="h2" variant="h5">
                 {post.title}
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
