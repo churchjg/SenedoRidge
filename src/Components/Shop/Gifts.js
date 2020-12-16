@@ -89,7 +89,9 @@ export default function Gifts() {
                     </p>
                   </div>
                   <div class="card-footer">
+                  <a href="/checkout">
                     <button class="order">Add To Cart</button>
+                  </a>
                   </div>
                 </div>
               </div>

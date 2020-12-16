@@ -56,8 +56,8 @@ export default function WineShop() {
             <div class="col-lg-3">
               <h1 class="my-4">Senedo Ridge Vineyard — Wine Shop</h1>
               <div class="list-group">
-                <a href="#" class="list-group-item">Red Wine</a>
-                <a href="#" class="list-group-item">White/Other Wines</a>
+                <a href="/wine/category/red" class="list-group-item">Red Wine</a>
+                <a href="/wine/category/rose" class="list-group-item">White/Other Wines</a>
                 <a href="/gift" class="list-group-item">Gifts</a>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function WineShop() {
                   <a href="#"><img class="card-img-top" src="https://i.imgur.com/rL7eA34.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="/item">Vintners Reserve</a>
+                      <a href="/item/">Vintners Reserve</a>
                     </h4>
                     <h5>$26.00</h5>
                     <p class="card-text">This specialty reserve is aged in small batches within French oak barrels. Still containing bold flavor, it's tannins have dissipated — imparting a smooth, rich flavor boasting of black fruit and vanilla.</p>
@@ -156,7 +156,7 @@ export default function WineShop() {
                   <a href="#"><img class="card-img-top" src="https://i.imgur.com/PxpDi9P.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="/item">Rosé</a>
+                      <a href="/item/">Rosé</a>
                     </h4>
                     <h5>$18.00</h5>
                     <p class="card-text">Senedo's Rosé is the newest addition to our inventory! It boasts great summer flavors including red fruit, flowers, citrus, and melon, with a pleasant crunchy green flavor on the finish similar to celery or rhubarb. Fresh, fruity, with some extra brightness and crispness — this wine is fantastic for summer nights.</p>
@@ -172,7 +172,7 @@ export default function WineShop() {
                   <a href="#"><img class="card-img-top" src="https://i.imgur.com/ohEajXT.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="/item">Petít Verdot</a>
+                      <a href="/item/">Petít Verdot</a>
                     </h4>
                     <h5>$24.00</h5>
                     <p class="card-text">Petit Verdot offers up aromas of mostly black fruit flavors ranging from plum, blackberry and blueberry to slightly lighter black cherry. The unique and intriguing flavors of Petit Verdot are herbal and floral notes such as violet, lilac, lavender, sage, and dried herbs. This wine has a full body and high tannins.</p>
@@ -188,7 +188,7 @@ export default function WineShop() {
                   <a href="#"><img class="card-img-top" src="https://i.imgur.com/OaQ29OX.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="/item">Chambourcin</a>
+                      <a href="/item/">Chambourcin</a>
                     </h4>
                     <h5>$20.00</h5>
                     <p class="card-text">Chambourcin is a hybrid grape variety that is popular due to its high crop yields, versatility, beautiful color, and aromatics. This particular wine, however, was made for drinking! It is a full flavored wine that showcases a wide range of berries while providing a dry style and drinking experience.</p>
@@ -204,13 +204,15 @@ export default function WineShop() {
                   <a href="#"><img class="card-img-top" src="https://i.imgur.com/vdVhnD0.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="/item">Cabernet Sauvignon</a>
+                      <a href="/item/">Cabernet Sauvignon</a>
                     </h4>
                     <h5>$22.00</h5>
                     <p class="card-text">A young wine with strong berry flavors, this wine is best served at room temperature, 15-20 minutes after opening.</p>
                   </div>
                   <div class="card-footer">
+                    <a href="/item">
                     <button class="order">Add To Cart</button>
+                  </a>
                   </div>
                 </div>
               </div>
@@ -226,7 +228,9 @@ export default function WineShop() {
                     <p class="card-text">Senedo Ridge Gift Cards make a great present for any occasion!</p>
                   </div>
                   <div class="card-footer">
-                    <button class="order">Add To Cart</button>
+                  <a href="/gift">
+                    <button class="order">See Gifts</button>
+                    </a>
                   </div>
                 </div>
               </div> 

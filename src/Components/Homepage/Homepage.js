@@ -13,6 +13,8 @@ import Gallery from "../Gallery/Gallery";
 import WineShop from "../Shop/WineShop"
 import WineItem from "../ShopItems/Items"
 import Checkout from "../Checkout/Checkout"
+import * as Scroll from 'react-scroll';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -20,10 +22,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 const sections = [
   { title: "Home", url: "/" },
-  { title: "About Us", url: "#" },
-  { title: "Contact Us", url: "#" },
+  { title: "About Us",  },
+  { title: "Contact Us", },
   { title: "Events", url: "/event" },
   { title: "Wine Shop", url: "/wine" },
   { title: "Gallery", url: "/gallery" },
@@ -83,12 +86,10 @@ export default function Homepage() {
             {contactUs.map((post) => (
               <ContactUs key={post.title} post={post} />
             ))}
+            
           </Grid>
         </main>
-        {/* <Gallery/> */}
-        {/* <WineShop/> */}
-        {/* <WineItem /> */}
-        {/* <Checkout/> */}
+        
       </Container>
       <Footer
         title="Senedo Ridge Vineyard"

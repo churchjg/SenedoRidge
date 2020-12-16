@@ -18,8 +18,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="/">
+        Senedo Ridge Vineyard
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -97,7 +97,7 @@ export default function Checkout() {
       <AppBar position="absolute" color="default" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Company name
+            Senedo Ridge Vineyard
           </Typography>
         </Toolbar>
       </AppBar>
@@ -136,6 +136,7 @@ export default function Checkout() {
                   <Button
                     variant="contained"
                     color="primary"
+                    
                     onClick={handleNext}
                     className={classes.button}
                   >

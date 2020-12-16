@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+// import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -26,6 +27,8 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
   },
 }));
+
+
 
 export default function Header(props) {
   const classes = useStyles();
@@ -54,6 +57,7 @@ export default function Header(props) {
       </Toolbar>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map((section) => (
+          
           <Link
             color="inherit"
             noWrap
@@ -64,6 +68,7 @@ export default function Header(props) {
           >
             {section.title}
           </Link>
+          
         ))}
       </Toolbar>
     </React.Fragment>
