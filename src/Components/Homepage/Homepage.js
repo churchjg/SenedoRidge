@@ -87,8 +87,8 @@ export default function Homepage() {
         </main>
         <Gallery/>
         {/* <WineShop/> */}
-        <WineItem />
-        <Checkout/>
+        {/* <WineItem /> */}
+        {/* <Checkout/> */}
       </Container>
       <Footer
         title="Senedo Ridge Vineyard"

@@ -11,6 +11,8 @@ import Homepage from "./Components/Homepage/Homepage";
 import { Route, Link, Redirect, Switch } from "react-router-dom";
 import WineShop from "./Components/Shop/WineShop";
 import Gift from "./Components/Shop/Gifts";
+import Gallery from "./Components/Gallery/Gallery";
+import Checkout from "./Components/Checkout/Checkout";
 
 class App extends Component {
   constructor() {
@@ -32,9 +34,12 @@ class App extends Component {
     return (
       <Switch>
         <Route path="/" render={() => <Homepage />} exact/>
-
         <Route path="/wine" render={() => <WineShop />} />
         <Route path="/gift" render={() => <Gift />} />
+        <Route path="/event" render={() => <Event />} />
+        <Route path="/checkout" render={() => <Checkout />} />
+        <Route path="/item" render={() => <WineItem />} />
+        <Route path="/gallery" render={() => <Gallery />} />
       </Switch>
     );
   }

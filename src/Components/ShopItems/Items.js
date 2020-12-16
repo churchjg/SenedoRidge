@@ -36,13 +36,13 @@ export default function WineItem() {
               <a class="nav-link" href="#">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="/event">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Wine Shop</a>
+              <a class="nav-link" href="/wine">Wine Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="/gallery">Gallery</a>
             </li>
           </ul>
         </div>
