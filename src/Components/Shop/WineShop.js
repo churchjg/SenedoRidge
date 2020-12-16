@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Route } from 'react-router-dom'
 
 export default function WineShop() {
     
@@ -139,7 +140,7 @@ export default function WineShop() {
                   <a href="#"><img class="card-img-top" src="https://i.imgur.com/rL7eA34.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="#">Vinters Reserve</a>
+                      <a href="#">Vintners Reserve</a>
                     </h4>
                     <h5>$26.00</h5>
                     <p class="card-text">This specialty reserve is aged in small batches within French oak barrels. Still containing bold flavor, it's tannins have dissipated — imparting a smooth, rich flavor boasting of black fruit and vanilla.</p>
@@ -219,10 +220,10 @@ export default function WineShop() {
                   <a href="#"><img class="card-img-top" src="https://i.imgur.com/hzxOS7l.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
-                      <a href="#">Gift Cards</a>
+                      <a href="/gift">Gift Cards</a>
                     </h4>
                     <h5>Multiple Options</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <p class="card-text">Senedo Ridge Gift Cards make a great present for any occasion!</p>
                   </div>
                   <div class="card-footer">
                     <button class="order">Add To Cart</button>

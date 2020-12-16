@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from 'react-router-dom'
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
@@ -20,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: "Home", url: "" },
+  { title: "Home", url: "/" },
   { title: "About Us", url: "#" },
   { title: "Contact Us", url: "#" },
   { title: "Events", url: "/event" },
-  { title: "Wine Shop", url: "/wines" },
+  { title: "Wine Shop", url: "/wine" },
   { title: "Gallery", url: "/gallery" },
 ];
 
@@ -85,7 +86,7 @@ export default function Homepage() {
           </Grid>
         </main>
         <Gallery/>
-        <WineShop/>
+        {/* <WineShop/> */}
         <WineItem />
         <Checkout/>
       </Container>
