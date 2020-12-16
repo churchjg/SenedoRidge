@@ -85,7 +85,7 @@ export default function Homepage() {
             ))}
           </Grid>
         </main>
-        <Gallery/>
+        {/* <Gallery/> */}
         {/* <WineShop/> */}
         {/* <WineItem /> */}
         {/* <Checkout/> */}

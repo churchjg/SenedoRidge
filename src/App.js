@@ -13,6 +13,7 @@ import WineShop from "./Components/Shop/WineShop";
 import Gift from "./Components/Shop/Gifts";
 import Gallery from "./Components/Gallery/Gallery";
 import Checkout from "./Components/Checkout/Checkout";
+import WineItem from "./Components/ShopItems/Items"
 
 class App extends Component {
   constructor() {
@@ -23,7 +24,7 @@ class App extends Component {
     console.log("!!!!!!!!!!")
   
  
-  fetch("http://127.0.0.1:8000/wine")
+  fetch("http://127.0.0.1:8001/wine")
       .then(res => res.json())
       .then(data => console.log(JSON.parse(data)))
   
@@ -36,7 +37,7 @@ class App extends Component {
         <Route path="/" render={() => <Homepage />} exact/>
         <Route path="/wine" render={() => <WineShop />} />
         <Route path="/gift" render={() => <Gift />} />
-        <Route path="/event" render={() => <Event />} />
+        {/* <Route path="/event" render={() => <Event />} /> */}
         <Route path="/checkout" render={() => <Checkout />} />
         <Route path="/item" render={() => <WineItem />} />
         <Route path="/gallery" render={() => <Gallery />} />
