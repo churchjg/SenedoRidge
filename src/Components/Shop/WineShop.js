@@ -37,7 +37,7 @@ export default function WineShop() {
                   <a class="nav-link" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/events">Events</a>
+                  <a class="nav-link" href="/event">Events</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/wine">Wine Shop</a>

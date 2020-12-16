@@ -9,12 +9,8 @@ import MainFeaturedPost from "./MainFeaturedPost";
 import FeaturedPost from "./FeaturedPost";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
-import Gallery from "../Gallery/Gallery";
-import WineShop from "../Shop/WineShop"
-import WineItem from "../ShopItems/Items"
-import Checkout from "../Checkout/Checkout"
-import * as Scroll from 'react-scroll';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import Link from "@material-ui/core/Link";
+import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -22,11 +18,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// const scrollTo = () => {
+//   scroller.scrollTo('scroll-to-element', {
+//     duration: 800,
+//     delay: 0,
+//     smooth: 'easeInOutQuart'
+//   })
+// }
 
 const sections = [
   { title: "Home", url: "/" },
-  { title: "About Us",  },
-  { title: "Contact Us", },
+  { title: "About Us", url: "/about" },
+  { title: "Contact Us", url: "/contact"},
   { title: "Events", url: "/event" },
   { title: "Wine Shop", url: "/wine" },
   { title: "Gallery", url: "/gallery" },
@@ -57,6 +60,8 @@ const featuredPosts = [
 const contactUs = [
   {
     title: "Contact Us",
+    name: "scroll-to-element",
+    className: "element",
     date: "",
     description:
       "If you would like to get in contact, either for feedback or to join our wine club, please fill out the form below. DONT FORGET TO ADD FORM ",
@@ -64,7 +69,6 @@ const contactUs = [
     imageText: "Image Text",
   },
 ];
-
 
 
 export default function Homepage() {
@@ -84,13 +88,14 @@ export default function Homepage() {
           </Grid>
           <Grid container spacing={4}>
             {contactUs.map((post) => (
-              <ContactUs key={post.title} post={post} />
+              <ContactUs key={post.title} post={post} name="scroll-to-element" className="element"/>
+              
             ))}
-            
           </Grid>
         </main>
         
       </Container>
+      
       <Footer
         title="Senedo Ridge Vineyard"
         description="Estate Grown & Operated"

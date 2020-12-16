@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(1),
     backgroundImage: 'url(https://i.imgur.com/hRMV0G1.jpg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -38,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('lg')]: {
       padding: theme.spacing(12),
       paddingRight: 0,
-      width: "190%",
+      width: "300%",
      
     },
   },
@@ -55,7 +56,7 @@ export default function MainFeaturedPost(props) {
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <div className={classes.overlay} />
       <Grid container>
-        <Grid item md={2} >
+        <Grid item md={1} >
           <div className={classes.mainFeaturedPostContent}>
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}

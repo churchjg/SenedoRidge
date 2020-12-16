@@ -15,14 +15,17 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import { Route, Redirect, Switch } from "react-router-dom";
+// import Nav from 'react-bootstrap/Nav'
+// import { Link } from 'react-router-dom'
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="">
+      <Link color="inherit" href="/">
         Senedo Ridge Vineyard
-      </Link>{" "}
+      </Link>
+      {""}
       {new Date().getFullYear()}
       {"."}
     </Typography>
@@ -72,9 +75,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
- 
-
 export default function Gallery() {
   const classes = useStyles();
 
@@ -121,8 +121,11 @@ export default function Gallery() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="default" >
-                      Back To Home
+                  <Button variant="contained" color="default">
+                    <Link color="inherit" href="/">
+                      Back to Home
+                    </Link>
+                    {""}
                   </Button>
                 </Grid>
                 <Grid item>
@@ -150,7 +153,10 @@ export default function Gallery() {
                     Misty Western View
                   </Typography>
                   <Typography>
-                  The front of Senedo Ridge's property faces East towards West Virginia. In the distance you can get a picturesque view of the Appalachian Mountains, made even better after a thunderstorm
+                    The front of Senedo Ridge's property faces East towards West
+                    Virginia. In the distance you can get a picturesque view of
+                    the Appalachian Mountains, made even better after a
+                    thunderstorm
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -172,7 +178,8 @@ export default function Gallery() {
                     Buck Mountain Snow Day
                   </Typography>
                   <Typography>
-                    Here is our neighboring mountain, Buck Mountain, on a snowy December day.
+                    Here is our neighboring mountain, Buck Mountain, on a snowy
+                    December day.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -194,7 +201,8 @@ export default function Gallery() {
                     Buck Mountain Smokey
                   </Typography>
                   <Typography>
-                  Buck Mountain seen again, just before a spring storm rolls in.
+                    Buck Mountain seen again, just before a spring storm rolls
+                    in.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -216,7 +224,8 @@ export default function Gallery() {
                     Friend 1 — Black Bear
                   </Typography>
                   <Typography>
-                    We have many friends that visit our Vineyard, best to leave this one some space. 
+                    We have many friends that visit our Vineyard, best to leave
+                    this one some space.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -238,7 +247,9 @@ export default function Gallery() {
                     Friend 2 — Fox
                   </Typography>
                   <Typography>
-                    This baby fox somehow breached our unbreachable defenses and made it inside the fence. Hopefully he isn't as sly as people say.
+                    This baby fox somehow breached our unbreachable defenses and
+                    made it inside the fence. Hopefully he isn't as sly as
+                    people say.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -260,7 +271,8 @@ export default function Gallery() {
                     Friend 3 — Hawk
                   </Typography>
                   <Typography>
-                    The view is so great at Senedo Ridge that many of our winged friends stop in just to take in the scenery!
+                    The view is so great at Senedo Ridge that many of our winged
+                    friends stop in just to take in the scenery!
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -282,7 +294,9 @@ export default function Gallery() {
                     Turkey Season
                   </Typography>
                   <Typography>
-                    We often get flocks of turkey that wander around the Vineyard. But we tend to get our Thanksgiving meals elsewhere.
+                    We often get flocks of turkey that wander around the
+                    Vineyard. But we tend to get our Thanksgiving meals
+                    elsewhere.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -301,10 +315,12 @@ export default function Gallery() {
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                  Appalachian Mountain Sunset
+                    Appalachian Mountain Sunset
                   </Typography>
                   <Typography>
-                  The only thing that can beat a sunset over the Appalachian Mountains is a sunset over the Appalachian Mountains with a glass of wine by your side!
+                    The only thing that can beat a sunset over the Appalachian
+                    Mountains is a sunset over the Appalachian Mountains with a
+                    glass of wine by your side!
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -326,7 +342,8 @@ export default function Gallery() {
                     Spring Bloom
                   </Typography>
                   <Typography>
-                  Taken on an early spring day, these vines grow so fast. Eventually reaching 8 feet by the start of summer.
+                    Taken on an early spring day, these vines grow so fast.
+                    Eventually reaching 8 feet by the start of summer.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -348,7 +365,9 @@ export default function Gallery() {
                     The Storm
                   </Typography>
                   <Typography>
-                    Here you can catch a glimpse of the Vineyard's owner, Jon Church, threading trellis wire. He didn't even take a break duuring the thunderstorm seen passing behind him.
+                    Here you can catch a glimpse of the Vineyard's owner, Jon
+                    Church, threading trellis wire. He didn't even take a break
+                    duuring the thunderstorm seen passing behind him.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -370,7 +389,8 @@ export default function Gallery() {
                     Tractor's First Snow Day
                   </Typography>
                   <Typography>
-                  This was "Captain Kubota's" first adventure in the snow, back in 2015. Yes, we named our tractor.
+                    This was "Captain Kubota's" first adventure in the snow,
+                    back in 2015. Yes, we named our tractor.
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -392,7 +412,10 @@ export default function Gallery() {
                     What Started It All
                   </Typography>
                   <Typography>
-                  Aided by friends & family, Senedo Ridge's first planting season occurred in 2014. Things have come a long way since then but it's important to remember all the hard work that got you where you are today!
+                    Aided by friends & family, Senedo Ridge's first planting
+                    season occurred in 2014. Things have come a long way since
+                    then but it's important to remember all the hard work that
+                    got you where you are today!
                   </Typography>
                 </CardContent>
                 <CardActions>

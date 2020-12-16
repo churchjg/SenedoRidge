@@ -7,7 +7,9 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-// import { Link } from "react-scroll";
+
+// import { render } from 'react-dom';
+// import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -23,13 +25,19 @@ const useStyles = makeStyles((theme) => ({
     overflowX: 'auto',
   },
   toolbarLink: {
-    padding: theme.spacing(1),
+    padding: theme.spacing(2),
     flexShrink: 0,
   },
 }));
 
 
-
+// const scrollTo=() => {
+//   scroller.scrollTo('scroll-to-element', {
+//     duration: 800,
+//     delay: 0,
+//     smooth: 'easeInOutQuart'
+//   })
+// }
 export default function Header(props) {
   const classes = useStyles();
   const { sections, title } = props;
@@ -40,11 +48,12 @@ export default function Header(props) {
         <Button variant="outlined" size="small">Join Our Wine Club</Button>
         <Typography
           component="h1"
-          variant="h3"
+          variant="h2"
           color="inherit"
           align="center"
           noWrap
           className={classes.toolbarTitle}
+          
         >
           {title}
         </Typography>
@@ -56,6 +65,7 @@ export default function Header(props) {
         </Button>
       </Toolbar>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
+      
         {sections.map((section) => (
           
           <Link
@@ -65,7 +75,8 @@ export default function Header(props) {
             variant="body1"
             href={section.url}
             className={classes.toolbarLink}
-          >
+            
+            >
             {section.title}
           </Link>
           

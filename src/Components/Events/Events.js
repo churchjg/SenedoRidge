@@ -20,7 +20,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="">
+      <Link color="inherit" href="/">
         Senedo Ridge Vineyard
       </Link>{" "}
       {new Date().getFullYear()}
@@ -119,7 +119,10 @@ export default function Event() {
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="default" >
-                      Back To Home
+                  <Link color="inherit" href="/">
+                      Back to Home
+                    </Link>
+                    {""}
                   </Button>
                 </Grid>
                 <Grid item>

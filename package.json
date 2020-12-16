@@ -11,6 +11,7 @@
     "bootstrap": "^4.5.3",
     "fontsource-roboto": "^3.1.5",
     "markdown-to-jsx": "^7.1.0",
+    "material-ui-form": "^1.0.0-alpha.26",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",

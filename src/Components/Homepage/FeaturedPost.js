@@ -33,7 +33,7 @@ export default function FeaturedPost(props) {
 
   return (
     <Grid item xs={12} md={12}>
-      <CardActionArea component="a" href="#">
+      
         <Card className={classes.card}>
           <div className={classes.cardDetails}>
             <CardContent>
@@ -54,7 +54,7 @@ export default function FeaturedPost(props) {
             <CardMedia className={classes.cardMedia} image={post.image} title={post.imageTitle} />
           </Hidden>
         </Card>
-      </CardActionArea>
+      
       
     </Grid>
   );

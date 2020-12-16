@@ -15,6 +15,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import Checkout from "./Components/Checkout/Checkout";
 import WineItem from "./Components/ShopItems/Items"
 import Event from "./Components/Events/Events"
+import ContactUs from "./Components/Homepage/ContactUs";
 
 class App extends Component {
   constructor() {
@@ -25,7 +26,7 @@ class App extends Component {
     console.log("!!!!!!!!!!")
   
  
-  fetch("https://senedo-backend.herokuapp.com/wine")
+  fetch("https://senedo-backend.herokuapp.com/")
       .then(res => res.json())
       .then(data => console.log(JSON.parse(data)))
   
@@ -42,6 +43,8 @@ class App extends Component {
         <Route path="/checkout" render={() => <Checkout />} />
         <Route path="/item" render={() => <WineItem />} />
         <Route path="/gallery" render={() => <Gallery />} />
+        <Route path="/contact" render={() => <ContactUs />} />
+        <Route path="/about" render={() => <ContactUs />} />
       </Switch>
     );
   }
