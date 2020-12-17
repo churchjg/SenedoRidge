@@ -14,6 +14,7 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     borderBottom: `2px solid ${theme.palette.divider}`,
+    marginTop: "-25px"
   },
   toolbarTitle: {
     flex: 1,
@@ -27,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   toolbarLink: {
     padding: theme.spacing(2),
     flexShrink: 0,
+    
   },
 }));
 
@@ -75,6 +77,7 @@ export default function Header(props) {
             variant="body1"
             href={section.url}
             className={classes.toolbarLink}
+            
             
             >
             {section.title}
