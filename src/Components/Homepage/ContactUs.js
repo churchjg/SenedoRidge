@@ -8,12 +8,14 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Hidden from "@material-ui/core/Hidden";
-import {
-  FormControl,
-  Input,
-  InputLabel,
-  FormHelperText, TextField
-} from "@material-ui/core";
+import Button from "@material-ui/core/Button";
+import Link from "@material-ui/core/Link";
+// import {
+//   FormControl,
+//   Input,
+//   InputLabel,
+//   FormHelperText, TextField
+// } from "@material-ui/core";
 
 const useStyles = makeStyles({
   card: {
@@ -47,14 +49,17 @@ export default function ContactUs(props) {
               {post.description}
             </Typography>
             <Typography variant="subtitle1" color="primary"></Typography>
-            <form className={classes.root} noValidate autoComplete="off">
-              <TextField
-                id="standard-secondary"
-                label="Standard secondary"
-                color="secondary"
-
-              />
-            </form>
+            <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Button variant="contained" color="default">
+                    <Link color="inherit" href="/contact">
+                      Get In Touch
+                    </Link>
+                    {""}
+                  </Button>
+                </Grid>
+                
+              </Grid>
           </CardContent>
         </div>
         <Hidden xsDown>

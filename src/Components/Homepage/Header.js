@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
 // import { render } from 'react-dom';
-// import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -33,16 +33,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-// const scrollTo=() => {
-//   scroller.scrollTo('scroll-to-element', {
-//     duration: 800,
-//     delay: 0,
-//     smooth: 'easeInOutQuart'
-//   })
-// }
+
 export default function Header(props) {
   const classes = useStyles();
   const { sections, title } = props;
+  
+  const scrollTo = () => {
+    scroller.scrollTo('featuredPosts', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
 
   return (
     <React.Fragment>
@@ -74,6 +76,7 @@ export default function Header(props) {
             color="inherit"
             noWrap
             key={section.title}
+            onClick={scrollTo()}
             variant="body1"
             href={section.url}
             className={classes.toolbarLink}
@@ -81,6 +84,7 @@ export default function Header(props) {
             
             >
             {section.title}
+            {section.title1} 
           </Link>
           
         ))}

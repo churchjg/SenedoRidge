@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 const sections = [
   { title: "Home", url: "/" },
-  { title: "About Us", url: "/about" },
+  { title1: "About Us", name:"scroll-to-element" , className:"element" },
   { title: "Contact Us", url: "/contact"},
   { title: "Events", url: "/event" },
   { title: "Wine Shop", url: "/wine" },
@@ -64,7 +64,7 @@ const contactUs = [
     className: "element",
     date: "",
     description:
-      "If you would like to get in contact, either for feedback or to join our wine club, please fill out the form below. DONT FORGET TO ADD FORM ",
+      "If you would like to get in contact, either for feedback or to join our wine club, please click the button below and fill out the form.",
     image: "https://i.imgur.com/ELifj89.jpg",
     imageText: "Image Text",
   },
@@ -83,7 +83,7 @@ export default function Homepage() {
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
+              <FeaturedPost name="featuredPosts" className="element" key={post.title} post={post} />
             ))}
           </Grid>
           <Grid container spacing={4}>

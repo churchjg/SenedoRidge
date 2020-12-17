@@ -23,7 +23,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="/">
-        Senedo Ridge Vineyard
+        Senedo Ridge Vineyard—
       </Link>
       {""}
       {new Date().getFullYear()}
@@ -130,7 +130,9 @@ export default function Gallery() {
                 </Grid>
                 <Grid item>
                   <Button variant="outlined" color="default">
-                    Contact Us
+                  <Link color="inherit" href="/contact">
+                      Contact Us
+                    </Link>
                   </Button>
                 </Grid>
               </Grid>
