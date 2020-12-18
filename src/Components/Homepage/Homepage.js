@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 const sections = [
   { title: "Home", url: "/" },
-  { title1: "About Us", name:"scroll-to-element" , className:"element" },
+  { title: "About Us", url: "/about" },
   { title: "Contact Us", url: "/contact"},
   { title: "Events", url: "/event" },
   { title: "Wine Shop", url: "/wine" },
@@ -46,29 +46,29 @@ const mainFeaturedPost = {
   linkText: "Browse Wines",
 };
 
-const featuredPosts = [
-  {
-    title: "About Us",
-    date: "",
-    description:
-      "Senedo Ridge is family owned and operated by the Church family. Our wine is estate grown and produced among the foothills of the Shenandoah Valley. The Vineyard operates on two acres of a sloping mountainside with high quality clay-based soil................................................................ ",
-    image: "https://i.imgur.com/Rd7jJDR.jpg",
-    imageText: "Image Text",
-  },
-];
+// const featuredPosts = [
+//   {
+//     title: "About Us",
+//     date: "",
+//     description:
+//       "Senedo Ridge is family owned and operated by the Church family. Our wine is estate grown and produced among the foothills of the Shenandoah Valley. The Vineyard operates on two acres of a sloping mountainside with high quality clay-based soil................................................................ ",
+//     image: "https://i.imgur.com/Rd7jJDR.jpg",
+//     imageText: "Image Text",
+//   },
+// ];
 
-const contactUs = [
-  {
-    title: "Contact Us",
-    name: "scroll-to-element",
-    className: "element",
-    date: "",
-    description:
-      "If you would like to get in contact, either for feedback or to join our wine club, please click the button below and fill out the form.",
-    image: "https://i.imgur.com/ELifj89.jpg",
-    imageText: "Image Text",
-  },
-];
+// const contactUs = [
+//   {
+//     title: "Contact Us",
+//     name: "scroll-to-element",
+//     className: "element",
+//     date: "",
+//     description:
+//       "If you would like to get in contact, either for feedback or to join our wine club, please click the button below and fill out the form.",
+//     image: "https://i.imgur.com/ELifj89.jpg",
+//     imageText: "Image Text",
+//   },
+// ];
 
 
 export default function Homepage() {
@@ -81,7 +81,7 @@ export default function Homepage() {
         <Header title="Senedo Ridge Vineyard" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
-          <Grid container spacing={4}>
+          {/* <Grid container spacing={4}>
             {featuredPosts.map((post) => (
               <FeaturedPost name="featuredPosts" className="element" key={post.title} post={post} />
             ))}
@@ -91,7 +91,7 @@ export default function Homepage() {
               <ContactUs key={post.title} post={post} name="scroll-to-element" className="element"/>
               
             ))}
-          </Grid>
+          </Grid> */}
         </main>
         
       </Container>

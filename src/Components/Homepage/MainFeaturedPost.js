@@ -39,7 +39,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('lg')]: {
       padding: theme.spacing(12),
       paddingRight: 0,
-      width: "300%",
+      width: "375%",
+      height: "55vh"
      
     },
   },
@@ -61,13 +62,13 @@ export default function MainFeaturedPost(props) {
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}
             </Typography>
-            <Typography variant="h6" color="inherit" paragraph>
+            <Typography variant="h5" color="inherit" paragraph>
               {post.description}
             </Typography>
-            <Typography variant="h6" color="inherit" paragraph>
+            <Typography variant="h5" color="inherit" paragraph>
               {post.description1}
             </Typography>
-            <Link variant="subtitle1" href="#">
+            <Link variant="subtitle1" href="/wine">
               {post.linkText}
             </Link>
           </div>

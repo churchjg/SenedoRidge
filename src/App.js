@@ -17,6 +17,7 @@ import WineItem from "./Components/ShopItems/Items"
 import Event from "./Components/Events/Events"
 // import ContactUs from "./Components/Homepage/ContactUs";
 import Contact from "./Components/Contact/Contact"
+import About from "./Components/About/About"
 
 class App extends Component {
   constructor() {
@@ -45,7 +46,7 @@ class App extends Component {
         <Route path="/item" render={() => <WineItem />} />
         <Route path="/gallery" render={() => <Gallery />} />
         <Route path="/contact" render={() => <Contact />} />
-        {/* <Route path="/about" render={() => <ContactUs />} /> */}
+        <Route path="/about" render={() => <About />} />
       </Switch>
     );
   }

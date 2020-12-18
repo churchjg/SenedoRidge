@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   toolbarLink: {
     padding: theme.spacing(2),
     flexShrink: 0,
+  
     
   },
 }));
@@ -38,13 +39,7 @@ export default function Header(props) {
   const classes = useStyles();
   const { sections, title } = props;
   
-  const scrollTo = () => {
-    scroller.scrollTo('featuredPosts', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    })
-  }
+  
 
   return (
     <React.Fragment>
@@ -76,15 +71,13 @@ export default function Header(props) {
             color="inherit"
             noWrap
             key={section.title}
-            onClick={scrollTo()}
+            
             variant="body1"
             href={section.url}
             className={classes.toolbarLink}
-            
-            
             >
             {section.title}
-            {section.title1} 
+            
           </Link>
           
         ))}
