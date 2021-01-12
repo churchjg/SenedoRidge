@@ -169,10 +169,10 @@ export default function Event() {
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Event 2
+                    Stay Tuned for More Events!
                   </Typography>
                   <Typography>
-                    Event description
+                    
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -191,10 +191,10 @@ export default function Event() {
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Event 3
+                    Stay Tuned for More Events!
                   </Typography>
                   <Typography>
-                  Event description
+                  
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -213,10 +213,10 @@ export default function Event() {
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                   Event 4
+                   Stay Tuned for More Events!
                   </Typography>
                   <Typography>
-                    Event description
+                    
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -235,10 +235,10 @@ export default function Event() {
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                   Event 5
+                   Stay Tuned for More Events
                   </Typography>
                   <Typography>
-                    Event description
+                    
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -257,10 +257,10 @@ export default function Event() {
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography gutterBottom variant="h5" component="h2">
-                   Event 6
+                   Stay Tuned for More Events
                   </Typography>
                   <Typography>
-                    Event description
+                    
                   </Typography>
                 </CardContent>
                 <CardActions>

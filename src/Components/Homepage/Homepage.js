@@ -38,8 +38,7 @@ const sections = [
 const mainFeaturedPost = {
   title: "Senedo Ridge Vineyard",
   description:
-    "Senedo Ridge Vineyard was founded in 2016 by Jonathan Church with a simple idea in mind:",
-  description1: "To Leave Something Behind.",
+    "Senedo Ridge Vineyard was founded in 2016 by the Church Family",
 
   image: "https://i.imgur.com/hRMV0G1.jpg",
   imgText: "main image description",

@@ -88,7 +88,7 @@ export default function WineShop() {
                   <div class="carousel-item active">
                     <img
                       class="d-block img-fluid"
-                      src="https://i.imgur.com/LLx3oN5.jpg?4"
+                      src="https://i.imgur.com/DPVJ1FE.png?1"
                       alt="First slide"
                     />
                   </div>
@@ -219,7 +219,7 @@ export default function WineShop() {
     
                <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="https://i.imgur.com/hzxOS7l.png" alt=""/></a>
+                  <a href="#"><img class="card-img-top" src="https://i.imgur.com/nUI03mv.png" alt=""/></a>
                   <div class="card-body">
                     <h4 class="card-title">
                       <a href="/gift">Gift Cards</a>

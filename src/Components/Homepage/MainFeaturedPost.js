@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('lg')]: {
       padding: theme.spacing(12),
       paddingRight: 0,
-      width: "375%",
+      width: "405%",
       height: "55vh"
      
     },
