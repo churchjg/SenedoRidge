@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    console.log("!!!!!!!!!!")
+    
   
  
   fetch("https://senedo-backend.herokuapp.com/")

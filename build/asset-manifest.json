@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SenedoFrontend/static/css/main.b5e1d7ed.chunk.css",
+    "main.js": "/SenedoFrontend/static/js/main.b1f9ca22.chunk.js",
+    "main.js.map": "/SenedoFrontend/static/js/main.b1f9ca22.chunk.js.map",
+    "runtime-main.js": "/SenedoFrontend/static/js/runtime-main.3a1b1926.js",
+    "runtime-main.js.map": "/SenedoFrontend/static/js/runtime-main.3a1b1926.js.map",
+    "static/css/2.5c2aaab0.chunk.css": "/SenedoFrontend/static/css/2.5c2aaab0.chunk.css",
+    "static/js/2.28b3096d.chunk.js": "/SenedoFrontend/static/js/2.28b3096d.chunk.js",
+    "static/js/2.28b3096d.chunk.js.map": "/SenedoFrontend/static/js/2.28b3096d.chunk.js.map",
+    "static/js/3.8bb4477e.chunk.js": "/SenedoFrontend/static/js/3.8bb4477e.chunk.js",
+    "static/js/3.8bb4477e.chunk.js.map": "/SenedoFrontend/static/js/3.8bb4477e.chunk.js.map",
+    "index.html": "/SenedoFrontend/index.html",
+    "static/css/2.5c2aaab0.chunk.css.map": "/SenedoFrontend/static/css/2.5c2aaab0.chunk.css.map",
+    "static/css/main.b5e1d7ed.chunk.css.map": "/SenedoFrontend/static/css/main.b5e1d7ed.chunk.css.map",
+    "static/js/2.28b3096d.chunk.js.LICENSE.txt": "/SenedoFrontend/static/js/2.28b3096d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/SenedoFrontend/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a1b1926.js",
+    "static/css/2.5c2aaab0.chunk.css",
+    "static/js/2.28b3096d.chunk.js",
+    "static/css/main.b5e1d7ed.chunk.css",
+    "static/js/main.b1f9ca22.chunk.js"
+  ]
+}
