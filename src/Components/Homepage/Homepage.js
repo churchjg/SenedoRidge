@@ -38,7 +38,7 @@ const sections = [
 const mainFeaturedPost = {
   title: "Senedo Ridge Vineyard",
   description:
-    "Senedo Ridge Vineyard was founded in 2016 by the Church Family",
+    "Senedo Ridge Vineyard was founded in 2016 by the Church Family. It remains family owned and operated today.",
 
   image: "https://i.imgur.com/hRMV0G1.jpg",
   imgText: "main image description",

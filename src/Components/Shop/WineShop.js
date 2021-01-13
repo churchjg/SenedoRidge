@@ -31,10 +31,10 @@ export default function WineShop() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="/about">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="/contact">Contact Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/event">Events</a>
@@ -88,7 +88,7 @@ export default function WineShop() {
                   <div class="carousel-item active">
                     <img
                       class="d-block img-fluid"
-                      src="https://i.imgur.com/DPVJ1FE.png?1"
+                      src="https://i.imgur.com/lsqFtQx.jpg?3"
                       alt="First slide"
                     />
                   </div>
@@ -101,9 +101,16 @@ export default function WineShop() {
                   </div>
                   <div class="carousel-item">
                     <img
-                      class="d-block"
-                      src="https://i.imgur.com/yiotp6n.jpg?2"
+                      class="d-block img-fluid"
+                      src="https://i.imgur.com/NbNThe4.jpg?1"
                       alt="Third slide"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block img-fluid"
+                      src="https://i.imgur.com/uqZylTN.jpg?1"
+                      alt="Fourth slide"
                     />
                   </div>
                 </div>
