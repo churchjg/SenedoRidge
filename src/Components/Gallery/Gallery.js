@@ -73,7 +73,16 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  
 }));
+
+const image = ((e) => ({
+  bigImage: {
+    flex: 5,
+}
+}));
+
+
 
 export default function Gallery() {
   const classes = useStyles();
@@ -162,7 +171,7 @@ export default function Gallery() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small" color="primary">
+                  <Button size="small" color="primary" onClick={image.bigImage}>
                     View
                   </Button>
                 </CardActions>
@@ -185,7 +194,7 @@ export default function Gallery() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small" color="primary">
+                  <Button size="small" color="primary" onClick={makeStyles.viewImage}>
                     View
                   </Button>
                 </CardActions>

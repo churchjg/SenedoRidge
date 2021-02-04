@@ -39,14 +39,14 @@ class App extends Component {
     return (
       <Switch>
         <Route path="/" render={() => <Homepage />} exact/>
-        <Route path="/wine" render={() => <WineShop />} />
-        <Route path="/gift" render={() => <Gift />} />
-        <Route path="/event" render={() => <Event />} />
-        <Route path="/checkout" render={() => <Checkout />} />
-        <Route path="/item" render={() => <WineItem />} />
-        <Route path="/gallery" render={() => <Gallery />} />
-        <Route path="/contact" render={() => <Contact />} />
-        <Route path="/about" render={() => <About />} />
+        <Route path="/wine" render={() => <WineShop />} exact/>
+        <Route path="/gift" render={() => <Gift />} exact/>
+        <Route path="/event" render={() => <Event />} exact />
+        <Route path="/checkout" render={() => <Checkout exact />} />
+        <Route path="/item" render={() => <WineItem />} exact/>
+        <Route path="/gallery" render={() => <Gallery />} exact/>
+        <Route path="/contact" render={() => <Contact />} exact/>
+        <Route path="/about" render={() => <About />} exact/>
       </Switch>
     );
   }

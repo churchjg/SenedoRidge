@@ -8,13 +8,11 @@ import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
-// import { render } from 'react-dom';
-import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     borderBottom: `2px solid ${theme.palette.divider}`,
-    marginTop: "-25px"
+    marginTop: "10px"
   },
   toolbarTitle: {
     flex: 1,
